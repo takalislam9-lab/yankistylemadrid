@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios — Yanki Style Madrid · Móstoles</title>
+<meta name="description" content="Servicios de Yanki Style Madrid en Móstoles.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="header" class="scrolled">
+  <a href="index.html" class="logo" aria-label="Yanki Style Madrid, inicio"><span class="logo-mark">Y</span><span class="logo-text"><span class="script">Yanki Style</span><small>beauty · Móstoles</small></span></a>
+  <nav id="nav" aria-label="Navegación principal"><ul><li><a href="index.html#inicio">Inicio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="index.html#galeria">Galería</a></li><li><a href="index.html#opiniones">Opiniones</a></li><li><a href="index.html#contacto">Contacto</a></li></ul></nav><button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+</header>
+
+<div class="page-hero">
+  <span class="eyebrow">Nuestro catálogo</span>
+  <h1>Servicios</h1>
+  <p>Organizados por categoría. Toca una tarjeta para ver los servicios y pedir precio o cita.</p>
+</div>
+
+<div class="tabs">
+  <button class="tab-btn active" data-tab="unas">Uñas</button>
+  <button class="tab-btn" data-tab="mirada">Mirada</button>
+  <button class="tab-btn" data-tab="pelo">Cabello</button>
+  
+</div>
+
+<div class="tab-panel active" id="unas">
+  <div class="tab-intro"><span class="script">Manos</span><h2>Manicura y pedicura</h2><p>Pulidas, duraderas y con todo detalle. También para hombres.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('manicura')"><img src="maps_04.jpg" alt="Manicura" loading="lazy"><div class="cat-card-text"><h3>Manicura</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('pedicura')"><img src="maps_06.jpg" alt="Pedicura" loading="lazy"><div class="cat-card-text"><h3>Pedicura</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="mirada">
+  <div class="tab-intro"><span class="script">Mirada</span><h2>Pestañas y cejas</h2><p>Resultados cuidados y naturales.</p></div>
+  <div class="cat-grid">
+    <div class="cat-card" onclick="openModal('pestanas')"><img src="maps_02.jpg" alt="Pestañas" loading="lazy"><div class="cat-card-text"><h3>Pestañas</h3><span>Ver servicios</span></div></div>
+    <div class="cat-card" onclick="openModal('cejas')"><img src="maps_02.jpg" alt="Cejas" loading="lazy"><div class="cat-card-text"><h3>Cejas</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+<div class="tab-panel" id="pelo">
+  <div class="tab-intro"><span class="script">Cabello</span><h2>Color</h2><p>Tonos que te favorecen.</p></div>
+  <div class="cat-grid single">
+    <div class="cat-card" onclick="openModal('color')"><img src="maps_09.jpg" alt="Color y rubios" loading="lazy"><div class="cat-card-text"><h3>Color y rubios</h3><span>Ver servicios</span></div></div>
+  </div>
+</div>
+
+
+<p class="services-note">¿Quieres saber precios o tienes dudas? Escríbenos por WhatsApp al <a href="https://wa.me/34624563638" target="_blank" rel="noopener" style="color:var(--red)">624 56 36 38</a> y te asesoramos sin compromiso.</p>
+
+<div class="modal-overlay" id="modal-manicura"><div class="modal">
+  <button class="modal-close" onclick="closeModal('manicura')" aria-label="Cerrar">×</button>
+  <h3>Manicura</h3><p class="modal-sub">Con diseño</p>
+  <div class="svc-row"><div><div class="svc-name">Manicura con esmaltado</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Diseños a tu gusto</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Manicura masculina</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34624563638?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20manicura" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-pedicura"><div class="modal">
+  <button class="modal-close" onclick="closeModal('pedicura')" aria-label="Cerrar">×</button>
+  <h3>Pedicura</h3><p class="modal-sub">Pies</p>
+  <div class="svc-row"><div><div class="svc-name">Pedicura</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Pedicura masculina</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34624563638?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20pedicura" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-pestanas"><div class="modal">
+  <button class="modal-close" onclick="closeModal('pestanas')" aria-label="Cerrar">×</button>
+  <h3>Pestañas</h3><p class="modal-sub">Lifting y extensiones</p>
+  <div class="svc-row"><div><div class="svc-name">Lifting de pestañas</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Extensiones de pestañas</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34624563638?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20pesta%C3%B1as" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-cejas"><div class="modal">
+  <button class="modal-close" onclick="closeModal('cejas')" aria-label="Cerrar">×</button>
+  <h3>Cejas</h3><p class="modal-sub">Depilación</p>
+  <div class="svc-row"><div><div class="svc-name">Depilación de cejas</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34624563638?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20cejas" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+<div class="modal-overlay" id="modal-color"><div class="modal">
+  <button class="modal-close" onclick="closeModal('color')" aria-label="Cerrar">×</button>
+  <h3>Color y rubios</h3><p class="modal-sub">Cabello</p>
+  <div class="svc-row"><div><div class="svc-name">Color</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <div class="svc-row"><div><div class="svc-name">Rubios</div><span class="svc-desc"></span></div><div class="svc-price">Consultar</div></div>
+  <a class="modal-cta alt" href="https://wa.me/34624563638?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20color%20y%20rubios" target="_blank" rel="noopener">Pedir cita por WhatsApp</a>
+</div></div>
+
+
+<footer>
+  <div class="footer-bottom" style="margin-top:0">
+    <span>Propuesta de diseño para Yanki Style Madrid - demo, no es el sitio web oficial del negocio.</span>
+    <span><a href="aviso-legal.html">Aviso Legal</a> &middot; <a href="politica-privacidad.html">Privacidad</a> &middot; <a href="politica-cookies.html">Cookies</a></span>
+  </div>
+</footer>
+
+<div id="cookie-banner" class="cookie-banner"><p>Esta web utiliza cookies de terceros (Google Maps) para ofrecerte la mejor experiencia. Puedes aceptar su uso o rechazarlas. <a href="politica-cookies.html">Más información</a></p><div class="cookie-actions"><button onclick="setCookieChoice('rejected')" class="ck-reject">Rechazar</button><button onclick="setCookieChoice('accepted')" class="ck-accept">Aceptar</button></div></div>
+<div class="social-fabs"><a class="ig-fab" href="https://www.instagram.com/yanki_style_madrid/" target="_blank" rel="noopener" aria-label="Visitar Instagram"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.5" cy="6.5" r="1" fill="white"/></svg></a><a class="wa-fab" href="https://wa.me/34624563638?text=Hola%2C%20he%20visto%20vuestra%20web%20y%20me%20gustar%C3%ADa%20pedir%20cita%20en%20Yanki%20Style%20Madrid" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.2 8.2 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5v-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c2.6 1 2.6.7 3.1.6a2.6 2.6 0 0 0 1.7-1.2 2.1 2.1 0 0 0 .2-1.2c-.1-.1-.3-.2-.6-.3ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8Zm8.4-18.3A11.8 11.8 0 0 0 1.8 17.7L.2 23.8l6.3-1.6a11.8 11.8 0 0 0 5.6 1.4A11.8 11.8 0 0 0 20.4 3.5Z"/></svg></a></div>
+<script src="main.js"></script>
+</body>
+</html>
